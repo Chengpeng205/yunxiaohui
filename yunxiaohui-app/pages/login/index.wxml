@@ -1,0 +1,20 @@
+<view class="container">
+<view class="header">
+    <image src="/asset/imgs/login.png" mode="aspectFit"/>
+</view>
+  <view class="login">
+      <wiew class="form-item">
+        <image src="/asset/imgs/user.png" mode="aspectFill"/>
+        <input type="text" model:value="{{stuId}}"   placeholder="请输入学号"/>
+      </wiew>
+      <wiew class="form-item">
+        <image src="/asset/imgs/password.png" mode="aspectFill"/>
+        <input type="password" model:value="{{password}}"  placeholder="请输入密码"/>
+      </wiew>
+      <view bindtap="switchStatus" class="checkbox-item">
+         <checkbox checked="{{saveCount}}"  class="theme"></checkbox>
+         <view class="mairgin-left-sm">记住账号密码(本地存储)</view>
+      </view>
+    <button class="cu-btn"bindtap="login">登录</button>
+  </view>
+</view>
